@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Divs</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body id="backgroundImage">
+
+        <!-- Header -->
+        <div class="headerOuter">
+            <div class="header_left">
+                <p class="header_text" id="HeaderText">Logo</p>
+            </div>
+            <div class="header_right">
+                <p class="header_text" id="HeaderText1">This webpage is using divs for divisions.</p>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <ul class="navbarLinks">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <!-- Main Area -->
+        <div class="main_outer">
+            <div id="boxLeft" class="mainLeft">
+                <h3>This is Main Menu</h3>
+                <p class="main_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugit, error nisi. Eligendi, officiis facilis. Earum 
+                    iure possimus obcaecati minus? Modi, non eos culpa enim 
+                    libero totam reiciendis a quod nesciunt!
+                </p>
+            </div>
+            <div class="main_right" id="mainContainer">
+                <div class="hiddenEl">
+                    <h2 class="hideBtn">Hide</h2>
+                    <form>
+                        <label>Header </label><input id="headerBtn" type="checkbox" value="" onclick='hideCheck();'><br/>
+                        <br/>
+                        <label>Links </label><input id="linksBtn" type="checkbox" value="" onclick="linkHide();"><br/>
+                        <br/>
+                        <label>Left Menu </label><input id="leftMenuBtn" type="checkbox" value="" onclick="sectionHide();"><br/>
+                        <br/>
+                    </form>
+                </div>
+                <div class="themeEl">
+                    <h2 class="themeBtn">Theme</h2>
+                    <form>
+                        <label>Background Color </label><input id="bgColorBtn" type="color" onchange="backgrounddColor();"><br/>
+                        <br/>
+                        <label>Header Text Color </label><input id="textColorBtn" type="color" value="" onchange="headerTextColor();"><br/>
+                        <br/>
+                        <label>Background Image </label><input id="bgImageBtn" type="file" onchange="bgImageChange();"><br/>
+                        <p class="littleMsg">(Not Working)</p>
+                        <br/>
+                        <label>Navbar Links Color </label><input id="LinksbgColorBtn" type="color" value="" onchange="navBarChange();">
+                        <br/>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer_text">Footer contains links, emails and 
+                other important information
+            </p>
+        </div>
+
+    </body>
+</html>
